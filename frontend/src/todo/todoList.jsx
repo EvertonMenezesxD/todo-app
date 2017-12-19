@@ -1,5 +1,23 @@
 import React from 'react'
 
-export default props => (
-    <div><h1>Lista</h1></div>
-)
+export default props => {
+    const renderRows = () => {
+        return(
+            <tr><td>ok</td></tr>
+        )
+    }
+
+    return(
+        <table className='table'>
+        <thead>
+            <tr>
+                <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                {renderRows()}
+            </tbody>
+            </table>
+
+    )
+}
